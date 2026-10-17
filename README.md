@@ -1,100 +1,30 @@
-# Boya Ajay Varma — Portfolio Website
-
-A modern, minimalist, recruiter-optimized portfolio website built with **React**, **Vite**, and **Tailwind CSS**. Designed specifically for an **AI & Backend Engineer** targeting product teams and high-impact software engineering roles.
-
+### Hi there, I'm Ajay Varma 👋
+```
+Backend & AI Engineer | Open-Source Contributor | MLH Fellowship Applicant
+Bengaluru, India 🇮🇳 • Open to Global & Remote Opportunities
+```
+[![GitHub](https://img.shields.io/badge/GitHub-ajayvarmaboya-181717?style=flat&logo=github)](https://github.com/ajayvarmaboya)
+[![LeetCode](https://img.shields.io/badge/LeetCode-ajayvarmab-FFA116?style=flat&logo=leetcode)](https://leetcode.com/u/ajayvarmab/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live_Site-0ea5e9?style=flat&logo=safari)](https://ajayvarmaboya.github.io/portfolio)
+[![Email](https://img.shields.io/badge/Email-ajayvarmaboya%40gmail.com-EA4335?style=flat&logo=gmail)](mailto:ajayvarmaboya@gmail.com)
 ---
-
-## ⚡ Quick Start (Run Locally)
-
-1. **Install dependencies** (already done if in this repository):
-   ```bash
-   npm install
-   ```
-
-2. **Start the local development server**:
-   ```bash
-   npm run dev
-   ```
-   Open your browser at `http://localhost:5173`.
-
-3. **Build for production**:
-   ```bash
-   npm run build
-   ```
-
+### 🚀 About Me
+- 🔭 **Focus**: Building robust backend microservices, document-grounded Agentic RAG workflows, and developer automation tools.
+- 🤝 **Open-Source**: Active contributor to open-source agentic tools (e.g., [`OpenWork`](https://github.com/ajayvarmaboya)) and creator of developer utilities like [`leetcode-sync`](https://github.com/ajayvarmaboya).
+- 🎓 **Education**: B.Tech in Computer Science & Engineering (AI & ML) from Sri Venkateswara Engineering College, 8.2 CGPA.
+- 🏆 **Honors**: NPTEL National Certification in Cloud, Edge, IoT & ML (**Top 5% National Rank**).
+- 🧩 **DSA & Consistency**: Daily algorithmic practice in Java & Python, documented in [`neetcode-submissions`](https://github.com/ajayvarmaboya/neetcode-submissions).
 ---
-
-## 🛠️ How to Customize Your Portfolio
-
-All your personal details, projects, skills, and links live in **one single file**:
-📁 `src/data/portfolioData.js`
-
-### 1. Adding or Updating Projects
-Open `src/data/portfolioData.js` and edit the `featuredProjects` array:
-```javascript
-{
-  id: "new-project",
-  title: "My New Distributed Agent",
-  category: "GenAI / Backend",
-  badge: "Production Ready",
-  badgeColor: "emerald", // 'emerald' | 'blue' | 'purple' | 'amber'
-  description: "Short impact-focused summary...",
-  tech: ["Python", "LangGraph", "Docker", "PostgreSQL"],
-  github: "https://github.com/ajayvarmaboya/new-project",
-  liveDemo: "https://demo.com",
-  highlights: [
-    "Key architectural achievement 1",
-    "Key performance metric 2"
-  ]
-}
-```
-
-### 2. Adding Your LinkedIn Profile Once Restored
-In `src/data/portfolioData.js`, change:
-```javascript
-// From:
-linkedin: null,
-
-// To:
-linkedin: "https://www.linkedin.com/in/ajayvarmaboya",
-```
-The LinkedIn link will automatically appear in your navigation bar and footer!
-
-### 3. Adding Your PDF Resume
-Drop your updated resume into the `public/` folder and name it:
-```
-public/resume.pdf
-```
-The **"Download Resume"** button on the website will automatically serve this file.
-
-### 4. Changing Your Profile Photo
-* By default, the website pulls your live avatar directly from GitHub: `https://github.com/ajayvarmaboya.png`.
-* To use a custom photo, place your image into `public/photo.jpg` and in `src/data/portfolioData.js` change:
-  ```javascript
-  avatarUrl: "/photo.jpg",
-  ```
-* If no photo is provided, it gracefully falls back to the minimalist **AV** monogram badge.
-
+### 🛠️ Tech Stack & Tooling
+| Domain | Technologies |
+| :--- | :--- |
+| **Languages** | Java (17/21), Python (3.11+), JavaScript (ES6+), SQL |
+| **Backend & APIs** | FastAPI, Spring Boot 3, REST APIs, Pydantic, JDBC, Uvicorn, OAuth 2.0 |
+| **AI & Vector DB** | LangGraph (StateGraph), LangChain, Pinecone, FAISS, Sentence Transformers, Groq LLM |
+| **Databases** | PostgreSQL, MySQL, Relational Modeling, Schema Optimization |
+| **DevOps & Tools** | Docker, Docker Compose, Git & GitHub Actions (CI/CD), Linux/Bash, Maven |
+| **Testing & Quality** | Pytest, JUnit 5, Automated Evaluation Harnesses |
 ---
-
-## 🚀 How to Deploy Live (100% Free)
-
-### Option A: Deploy to Vercel (Recommended — Takes 2 Minutes)
-1. Push this folder to a new GitHub repository:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit of portfolio"
-   git branch -M main
-   git remote add origin https://github.com/ajayvarmaboya/portfolio.git
-   git push -u origin main
-   ```
-2. Go to **[vercel.com](https://vercel.com)** and sign in with GitHub.
-3. Click **"Add New Project"** and select your `portfolio` repository.
-4. Click **Deploy**. Vercel will build and host your site with free HTTPS in ~30 seconds!
-5. Any time you push a change to GitHub, Vercel will redeploy automatically.
-
-### Option B: Deploy to Netlify
-1. Go to **[netlify.com](https://netlify.com)** and sign in with GitHub.
-2. Select your repository, leave build command as `npm run build` and publish directory as `dist`.
-3. Click **Deploy Site**.
+### 📌 Featured Repositories
+#### 1. [Legixo RAG — Document-Grounded GenAI Pipeline](https://github.com/ajayvarmaboya) *(Primary MLH Code Sample)*
+> **Python • FastAPI • LangGraph • Pinecone • Groq LLM • Sentence Transformers • Docker**
