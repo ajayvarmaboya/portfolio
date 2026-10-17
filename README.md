@@ -28,3 +28,27 @@ Bengaluru, India 🇮🇳 • Open to Global & Remote Opportunities
 ### 📌 Featured Repositories
 #### 1. [Legixo RAG — Document-Grounded GenAI Pipeline](https://github.com/ajayvarmaboya) *(Primary MLH Code Sample)*
 > **Python • FastAPI • LangGraph • Pinecone • Groq LLM • Sentence Transformers • Docker**
+- Agentic document-grounded question-answering system using **LangGraph StateGraph** with conditional routing for relevance validation, source attribution, and hallucination reduction.
+- Verified against **12/12 automated evaluation scenarios** for reliable zero-hallucination citations.
+- Containerized with Docker and served over async FastAPI REST endpoints.
+#### 2. [LeetCode GitHub Sync — Developer Workflow Automation](https://github.com/ajayvarmaboya)
+> **Java • Spring Boot 3 • JavaScript • Chrome Manifest V3 • GitHub REST API • OAuth 2.0**
+- Chrome browser extension and Spring Boot backend microservice that intercepts accepted submissions on LeetCode and automatically pushes formatted code solutions to GitHub.
+- Secure GitHub OAuth 2.0 token exchange flow, Monaco editor extraction, and duplicate submission prevention.
+#### 3. [OpenWork Contribution — Open-Source Agentic AI](https://github.com/ajayvarmaboya)
+> **Open Source • Python • Docker • Git Collaboration**
+- Contributing to a modular desktop application powering guided agentic workflows.
+- Collaborating on PR reviews, issue triage, and multi-container Docker test environments.
+#### 4. [JobPrep OS & StockFlow Backend](https://github.com/ajayvarmaboya)
+> **Java 17 • Spring Boot 3 • PostgreSQL • Docker Compose • Maven**
+- Layered service-DAO pattern with normalized PostgreSQL schema, indexing, and Docker Compose persistence for developer interview tracking and order processing.
+---
+### 📊 GitHub & Problem Solving Activity
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=ajayvarmaboya&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="Ajay's GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ajayvarmaboya&layout=compact&theme=radical&hide_border=true" alt="Top Languages" width="48%" />
+</p>
+---
+### 💬 Let's Connect & Collaborate
+- **Email**: [ajayvarmaboya@gmail.com](mailto:ajayvarmaboya@gmail.com)
+- **Portfolio**: [ajayvarmaboya.github.io/portfolio](https://ajayvarmaboya.github.io/portfolio)
