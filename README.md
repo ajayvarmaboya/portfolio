@@ -66,6 +66,7 @@ Bengaluru, India 🇮🇳 • Open to Global & Remote Opportunities
 - Working with pull requests, issue triage, and multi-container Docker test environments.
 
 **Repository:** [https://github.com/different-ai/openwork](https://github.com/ajayvarmaboya)
+
 ---
 
 ## 📊 GitHub & Problem-Solving Activity
