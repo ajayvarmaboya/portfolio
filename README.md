@@ -52,3 +52,4 @@ Bengaluru, India 🇮🇳 • Open to Global & Remote Opportunities
 ### 💬 Let's Connect & Collaborate
 - **Email**: [ajayvarmaboya@gmail.com](mailto:ajayvarmaboya@gmail.com)
 - **Portfolio**: [ajayvarmaboya.github.io/portfolio](https://ajayvarmaboya.github.io/portfolio)
+---
