@@ -62,9 +62,9 @@ def create_docx(filename):
 
     # Target Headline
     p_head = doc.add_paragraph()
-    p_head.paragraph_format.space_after = Pt(6)
+    p_head.paragraph_format.space_after = Pt(5)
     p_head.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    r_head = p_head.add_run("Junior AI & Backend Engineer  |  Python, Java, FastAPI, Spring Boot & Agentic RAG")
+    r_head = p_head.add_run("Backend & AI Engineer  |  Open-Source Contributor  |  Python, Java, FastAPI & LangGraph")
     r_head.bold = True
     r_head.font.size = Pt(10)
     r_head.font.color.rgb = RGBColor(30, 41, 59)
@@ -73,27 +73,28 @@ def create_docx(filename):
     add_header("Professional Summary")
     p_sum = doc.add_paragraph()
     p_sum.paragraph_format.space_after = Pt(4)
-    p_sum.paragraph_format.line_spacing = 1.15
+    p_sum.paragraph_format.line_spacing = 1.14
     p_sum.add_run(
-        "Computer Science (AI & ML) graduate specializing in backend engineering and document-grounded GenAI architectures. "
-        "Hands-on experience designing high-throughput REST APIs with FastAPI and Spring Boot, building stateful LangGraph RAG workflows, "
-        "and implementing layered DAO architectures with PostgreSQL. Proven problem-solver with open-source contributions and active algorithmic practice in Java and Python."
+        "Computer Science (AI & ML) graduate and open-source contributor specializing in scalable backend engineering and document-grounded GenAI architectures. "
+        "Experienced in developing modular, containerized REST APIs with FastAPI and Spring Boot, orchestrating stateful LangGraph RAG workflows, "
+        "and building developer automation tools. Strong Git/GitHub fluency (PR workflows, code reviews, issue triage), reproducible Docker environments, "
+        "and disciplined algorithmic problem solving in Java and Python."
     )
 
     # Technical Skills
     add_header("Technical Skills")
     skills = [
         ("Programming Languages", "Java (17/21), Python, JavaScript, SQL"),
-        ("Backend & APIs", "FastAPI, Spring Boot, RESTful APIs, JDBC, Pydantic, Uvicorn, OAuth 2.0"),
-        ("AI & Vector Search", "LangGraph, LangChain, Pinecone, FAISS, Sentence Transformers, RAG Workflows, Prompt Engineering"),
-        ("Databases & Storage", "PostgreSQL, MySQL, Schema Design, Relational Modeling, PreparedStatement"),
-        ("DevOps & Cloud", "Docker, Docker Compose, Git, GitHub Actions, Linux, CI/CD Fundamentals, AWS & OCI Fundamentals"),
-        ("Core Engineering", "OOP, Data Structures & Algorithms (DSA), DAO Pattern, Layered Architecture, Exception Handling, Unit Testing")
+        ("Backend & APIs", "FastAPI, Spring Boot 3, RESTful APIs, JDBC, Pydantic, Uvicorn, OAuth 2.0, Maven"),
+        ("AI & Vector Systems", "LangGraph (StateGraph), LangChain, Pinecone, FAISS, Sentence Transformers, RAG Pipelines"),
+        ("Open Source & DevOps", "Git & GitHub (PRs, Code Reviews, Actions), Docker, Docker Compose, Linux, Pytest, JUnit"),
+        ("Databases & Architecture", "PostgreSQL, MySQL, Schema Design, Relational Modeling, Layered DAO Pattern, Indexing"),
+        ("Core Engineering", "Data Structures & Algorithms (DSA), OOP, Error Handling, API Contract Design, Clean Code")
     ]
     for cat, items in skills:
         p_sk = doc.add_paragraph()
         p_sk.paragraph_format.space_after = Pt(2)
-        p_sk.paragraph_format.line_spacing = 1.1
+        p_sk.paragraph_format.line_spacing = 1.08
         r_c = p_sk.add_run(f"• {cat}: ")
         r_c.bold = True
         r_c.font.size = Pt(9.5)
@@ -101,41 +102,41 @@ def create_docx(filename):
         r_i.font.size = Pt(9.5)
 
     # Selected Projects
-    add_header("Selected Engineering Projects")
+    add_header("Selected Projects & Open-Source Contributions")
     projects = [
         (
-            "Legixo RAG — Document-Grounded GenAI Pipeline",
-            "Python, FastAPI, LangGraph, Pinecone, Groq LLM, Sentence Transformers, Pydantic",
+            "Legixo RAG — Document-Grounded GenAI Pipeline (Primary Code Sample)",
+            "Python, FastAPI, LangGraph, Pinecone, Groq LLM, Sentence Transformers, Pydantic, Docker",
             [
-                "Architected a document-grounded question-answering service using LangGraph StateGraph, orchestrating conditional routing between retrieval relevance filtering, source attribution, and response synthesis.",
-                "Integrated Pinecone vector database with Sentence Transformers embeddings for semantic chunk retrieval, verifying 12/12 automated evaluation test scenarios for hallucination reduction.",
-                "Exposed asynchronous REST endpoints via FastAPI and Uvicorn with strict Pydantic schema validation for request payloads and structured responses."
+                "Architected an asynchronous document QA pipeline using LangGraph StateGraph, orchestrating conditional routing between retrieval relevance validation, source attribution, and response synthesis.",
+                "Integrated Pinecone vector database with Sentence Transformers for semantic chunk retrieval; verified 12/12 automated evaluation test scenarios for hallucination reduction on out-of-domain queries.",
+                "Containerized service using Docker and exposed high-throughput REST endpoints via FastAPI with strict Pydantic schemas, comprehensive error handling, and modular test coverage."
             ]
         ),
         (
-            "LeetCode GitHub Sync — Browser Extension & Microservice",
-            "Java, Spring Boot, JavaScript, Manifest V3, GitHub REST API, OAuth 2.0, Maven",
+            "LeetCode GitHub Sync — Open-Source Developer Automation Tool",
+            "Java, Spring Boot 3, JavaScript, Chrome Manifest V3, GitHub REST API, OAuth 2.0, Maven",
             [
-                "Engineered an automated browser extension detecting accepted LeetCode submissions and committing structured solution files directly to user GitHub repositories via GitHub REST API.",
-                "Implemented secure GitHub OAuth token exchange through a Spring Boot backend service, integrating Monaco editor DOM extraction and UTF-8-safe Base64 encoding.",
-                "Built validation logic to eliminate duplicate commits, handle wrong-answer protection, and provide structured sync error logging."
+                "Engineered an automated browser extension and backend microservice that detects accepted submissions and commits structured solution files directly to user GitHub repositories via GitHub REST API.",
+                "Implemented secure GitHub OAuth 2.0 token exchange through a Spring Boot service, integrating Monaco editor DOM extraction, UTF-8 Base64 encoding, and sync retry mechanisms.",
+                "Built validation logic to eliminate duplicate commits, handle wrong-answer edge cases, and log granular sync diagnostics, automating daily developer workflows."
             ]
         ),
         (
-            "JobPrep OS & StockFlow Backend",
+            "OpenWork — Open-Source Agentic AI Desktop Application",
+            "Open Source, Python, Docker, Git/GitHub, Linux, Agentic Workflows",
+            [
+                "Active contributor to an open-source desktop application powering guided agentic workflows, collaborating with maintainers on issue triage, PR reviews, and code contributions.",
+                "Configured and validated multi-container Docker environments to safely sandbox local autonomous agents and verify end-to-end integration test runs."
+            ]
+        ),
+        (
+            "JobPrep OS & StockFlow — Layered Backend & Database System",
             "Java 17, Spring Boot 3, PostgreSQL, Docker Compose, Maven, Relational Modeling",
             [
-                "Designed relational database schemas and indexed PostgreSQL tables to support interview preparation tracking and order/inventory management workflows.",
-                "Containerized application and database services using Docker Compose, establishing clean environment configuration and reliable local database persistence.",
-                "Implemented presentation, service, and DAO layers with constructor dependency injection, robust input validation, and custom exception handling."
-            ]
-        ),
-        (
-            "OpenWork — Open-Source Agentic AI Application",
-            "Open Source, Docker, Git/GitHub, Linux, Agentic Workflows",
-            [
-                "Contribute to an open-source desktop application powering guided agentic workflows, participating in PR reviews, issue triage, and code contributions.",
-                "Configured and validated multi-container Docker environments for running local autonomous agents and backend execution tasks."
+                "Designed relational database schemas with indexed PostgreSQL tables to support interview preparation tracking and order/inventory management workflows.",
+                "Implemented presentation, service, and DAO layers with constructor dependency injection, PreparedStatement SQL injection defense, and custom exception handling.",
+                "Containerized application and database services via Docker Compose for reproducible local setup across development and testing environments."
             ]
         )
     ]
@@ -279,66 +280,67 @@ def create_pdf(filename):
         contact_style
     ))
     story.append(Spacer(1, 3))
-    story.append(Paragraph("Junior AI & Backend Engineer &nbsp;|&nbsp; Python, Java, FastAPI, Spring Boot & Agentic RAG", headline_style))
-    story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#cbd5e1'), spaceBefore=2, spaceAfter=4))
+    story.append(Paragraph("Backend & AI Engineer &nbsp;|&nbsp; Open-Source Contributor &nbsp;|&nbsp; Python, Java, FastAPI & LangGraph", headline_style))
+    story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor('#cbd5e1'), spaceBefore=2, spaceAfter=3))
 
     # Summary
     story.append(Paragraph("PROFESSIONAL SUMMARY", heading_style))
     story.append(Paragraph(
-        "Computer Science (AI & ML) graduate specializing in backend engineering and document-grounded GenAI architectures. "
-        "Hands-on experience designing high-throughput REST APIs with FastAPI and Spring Boot, building stateful LangGraph RAG workflows, "
-        "and implementing layered DAO architectures with PostgreSQL. Proven problem-solver with open-source contributions and active algorithmic practice in Java and Python.",
+        "Computer Science (AI & ML) graduate and open-source contributor specializing in scalable backend engineering and document-grounded GenAI architectures. "
+        "Experienced in developing modular, containerized REST APIs with FastAPI and Spring Boot, orchestrating stateful LangGraph RAG workflows, "
+        "and building developer automation tools. Strong Git/GitHub fluency (PR workflows, code reviews, issue triage), reproducible Docker environments, "
+        "and disciplined algorithmic problem solving in Java and Python.",
         body_style
     ))
-    story.append(HRFlowable(width="100%", thickness=0.5, color=colors.HexColor('#e2e8f0'), spaceBefore=2, spaceAfter=3))
+    story.append(HRFlowable(width="100%", thickness=0.5, color=colors.HexColor('#e2e8f0'), spaceBefore=2, spaceAfter=2))
 
     # Skills
     story.append(Paragraph("TECHNICAL SKILLS", heading_style))
     skills = [
         "<b>Programming Languages:</b> Java (17/21), Python, JavaScript, SQL",
-        "<b>Backend & APIs:</b> FastAPI, Spring Boot, RESTful APIs, JDBC, Pydantic, Uvicorn, OAuth 2.0",
-        "<b>AI & Vector Search:</b> LangGraph, LangChain, Pinecone, FAISS, Sentence Transformers, RAG Workflows, Prompt Engineering",
-        "<b>Databases & Storage:</b> PostgreSQL, MySQL, Schema Design, Relational Modeling, PreparedStatement",
-        "<b>DevOps & Cloud:</b> Docker, Docker Compose, Git, GitHub Actions, Linux, CI/CD Fundamentals, AWS & OCI Fundamentals",
-        "<b>Core Engineering:</b> OOP, Data Structures & Algorithms (DSA), DAO Pattern, Layered Architecture, Exception Handling"
+        "<b>Backend & APIs:</b> FastAPI, Spring Boot 3, RESTful APIs, JDBC, Pydantic, Uvicorn, OAuth 2.0, Maven",
+        "<b>AI & Vector Systems:</b> LangGraph (StateGraph), LangChain, Pinecone, FAISS, Sentence Transformers, RAG Pipelines",
+        "<b>Open Source & DevOps:</b> Git & GitHub (PRs, Code Reviews, Actions), Docker, Docker Compose, Linux, Pytest, JUnit",
+        "<b>Databases & Architecture:</b> PostgreSQL, MySQL, Schema Design, Relational Modeling, Layered DAO Pattern, Indexing",
+        "<b>Core Engineering:</b> Data Structures & Algorithms (DSA), OOP, Error Handling, API Contract Design, Clean Code"
     ]
     for s in skills:
         story.append(Paragraph(f"• {s}", bullet_style))
-    story.append(HRFlowable(width="100%", thickness=0.5, color=colors.HexColor('#e2e8f0'), spaceBefore=2, spaceAfter=3))
+    story.append(HRFlowable(width="100%", thickness=0.5, color=colors.HexColor('#e2e8f0'), spaceBefore=2, spaceAfter=2))
 
     # Projects
-    story.append(Paragraph("SELECTED ENGINEERING PROJECTS", heading_style))
+    story.append(Paragraph("SELECTED PROJECTS & OPEN-SOURCE CONTRIBUTIONS", heading_style))
     
     # Project 1
-    story.append(Paragraph("<b>Legixo RAG — Document-Grounded GenAI Pipeline</b>", body_style))
-    story.append(Paragraph("Technologies: Python, FastAPI, LangGraph, Pinecone, Groq LLM, Sentence Transformers, Pydantic", tech_style))
-    story.append(Paragraph("• Architected a document-grounded question-answering service using LangGraph StateGraph with conditional routing between retrieval relevance filtering, source attribution, and response synthesis.", bullet_style))
-    story.append(Paragraph("• Integrated Pinecone vector database with Sentence Transformers embeddings for semantic chunk retrieval, verifying 12/12 automated evaluation test scenarios for hallucination reduction.", bullet_style))
-    story.append(Paragraph("• Exposed asynchronous REST endpoints via FastAPI and Uvicorn with strict Pydantic schema validation for request payloads and structured responses.", bullet_style))
-    story.append(Spacer(1, 2))
+    story.append(Paragraph("<b>Legixo RAG — Document-Grounded GenAI Pipeline (Primary Code Sample)</b>", body_style))
+    story.append(Paragraph("Technologies: Python, FastAPI, LangGraph, Pinecone, Groq LLM, Sentence Transformers, Pydantic, Docker", tech_style))
+    story.append(Paragraph("• Architected an asynchronous document QA pipeline using LangGraph StateGraph, orchestrating conditional routing between retrieval relevance validation, source attribution, and response synthesis.", bullet_style))
+    story.append(Paragraph("• Integrated Pinecone vector database with Sentence Transformers for semantic chunk retrieval; verified 12/12 automated evaluation test scenarios for hallucination reduction on out-of-domain queries.", bullet_style))
+    story.append(Paragraph("• Containerized service using Docker and exposed high-throughput REST endpoints via FastAPI with strict Pydantic schemas, comprehensive error handling, and modular test coverage.", bullet_style))
+    story.append(Spacer(1, 1.5))
 
     # Project 2
-    story.append(Paragraph("<b>LeetCode GitHub Sync — Browser Extension & Microservice</b>", body_style))
-    story.append(Paragraph("Technologies: Java, Spring Boot, JavaScript, Manifest V3, GitHub REST API, OAuth 2.0, Maven", tech_style))
-    story.append(Paragraph("• Engineered an automated browser extension detecting accepted LeetCode submissions and committing structured solution files directly to user GitHub repositories via GitHub REST API.", bullet_style))
-    story.append(Paragraph("• Implemented secure GitHub OAuth token exchange through a Spring Boot backend service, integrating Monaco editor DOM extraction and UTF-8-safe Base64 encoding.", bullet_style))
-    story.append(Paragraph("• Built validation logic to eliminate duplicate commits, handle wrong-answer protection, and provide structured sync error logging.", bullet_style))
-    story.append(Spacer(1, 2))
+    story.append(Paragraph("<b>LeetCode GitHub Sync — Open-Source Developer Automation Tool</b>", body_style))
+    story.append(Paragraph("Technologies: Java, Spring Boot 3, JavaScript, Chrome Manifest V3, GitHub REST API, OAuth 2.0, Maven", tech_style))
+    story.append(Paragraph("• Engineered an automated browser extension and backend microservice that detects accepted submissions and commits structured solution files directly to user GitHub repositories via GitHub REST API.", bullet_style))
+    story.append(Paragraph("• Implemented secure GitHub OAuth 2.0 token exchange through a Spring Boot service, integrating Monaco editor DOM extraction, UTF-8 Base64 encoding, and sync retry mechanisms.", bullet_style))
+    story.append(Paragraph("• Built validation logic to eliminate duplicate commits, handle wrong-answer edge cases, and log granular sync diagnostics, automating daily developer workflows.", bullet_style))
+    story.append(Spacer(1, 1.5))
 
     # Project 3
-    story.append(Paragraph("<b>JobPrep OS & StockFlow Backend</b>", body_style))
-    story.append(Paragraph("Technologies: Java 17, Spring Boot 3, PostgreSQL, Docker Compose, Maven, Relational Modeling", tech_style))
-    story.append(Paragraph("• Designed relational database schemas and indexed PostgreSQL tables to support interview preparation tracking and order/inventory management workflows.", bullet_style))
-    story.append(Paragraph("• Containerized application and database services using Docker Compose, establishing clean environment configuration and reliable local database persistence.", bullet_style))
-    story.append(Paragraph("• Implemented presentation, service, and DAO layers with constructor dependency injection, robust input validation, and custom exception handling.", bullet_style))
-    story.append(Spacer(1, 2))
+    story.append(Paragraph("<b>OpenWork — Open-Source Agentic AI Desktop Application</b>", body_style))
+    story.append(Paragraph("Technologies: Open Source, Python, Docker, Git/GitHub, Linux, Agentic Workflows", tech_style))
+    story.append(Paragraph("• Active contributor to an open-source desktop application powering guided agentic workflows, collaborating with maintainers on issue triage, PR reviews, and code contributions.", bullet_style))
+    story.append(Paragraph("• Configured and validated multi-container Docker environments to safely sandbox local autonomous agents and verify end-to-end integration test runs.", bullet_style))
+    story.append(Spacer(1, 1.5))
 
     # Project 4
-    story.append(Paragraph("<b>OpenWork — Open-Source Agentic AI Application</b>", body_style))
-    story.append(Paragraph("Technologies: Open Source, Docker, Git/GitHub, Linux, Agentic Workflows", tech_style))
-    story.append(Paragraph("• Contribute to an open-source desktop application powering guided agentic workflows, participating in PR reviews, issue triage, and code contributions.", bullet_style))
-    story.append(Paragraph("• Configured and validated multi-container Docker environments for running local autonomous agents and backend execution tasks.", bullet_style))
-    story.append(HRFlowable(width="100%", thickness=0.5, color=colors.HexColor('#e2e8f0'), spaceBefore=2, spaceAfter=3))
+    story.append(Paragraph("<b>JobPrep OS & StockFlow — Layered Backend & Database System</b>", body_style))
+    story.append(Paragraph("Technologies: Java 17, Spring Boot 3, PostgreSQL, Docker Compose, Maven, Relational Modeling", tech_style))
+    story.append(Paragraph("• Designed relational database schemas with indexed PostgreSQL tables to support interview preparation tracking and order/inventory management workflows.", bullet_style))
+    story.append(Paragraph("• Implemented presentation, service, and DAO layers with constructor dependency injection, PreparedStatement SQL injection defense, and custom exception handling.", bullet_style))
+    story.append(Paragraph("• Containerized application and database services via Docker Compose for reproducible local setup across development and testing environments.", bullet_style))
+    story.append(HRFlowable(width="100%", thickness=0.5, color=colors.HexColor('#e2e8f0'), spaceBefore=2, spaceAfter=2))
 
     # Education
     story.append(Paragraph("EDUCATION", heading_style))

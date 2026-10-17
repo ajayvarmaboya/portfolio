@@ -9,8 +9,8 @@ export const portfolioData = {
   personal: {
     name: "Boya Ajay Varma",
     shortName: "Ajay",
-    role: "Backend & AI Engineer",
-    headline: "Building resilient backends, distributed APIs, and Agentic AI workflows.",
+    role: "Backend & AI Engineer | Open-Source Contributor",
+    headline: "Building resilient backends, distributed APIs, and Agentic AI workflows with open-source rigor.",
     subheadline: "Computer Science (AI & ML) graduate with hands-on experience orchestrating LangGraph RAG systems, Java layered architectures, and high-performance Python APIs.",
     location: "Bengaluru, India",
     openToRelocate: true,
