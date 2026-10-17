@@ -39,7 +39,7 @@ Bengaluru, India 🇮🇳 • Open to Global & Remote Opportunities
 
 ### 1. Legixo RAG — Document-Grounded GenAI Pipeline
 
-**Primary MLH Code Sample**
+
 
 **Tech:** Python • FastAPI • LangGraph • Pinecone • Groq LLM • Sentence Transformers • Docker
 
@@ -47,7 +47,7 @@ Bengaluru, India 🇮🇳 • Open to Global & Remote Opportunities
 - Verified against **12/12 automated evaluation scenarios**, according to the project's evaluation results.
 - Containerized the application with Docker and exposed it through asynchronous FastAPI REST endpoints.
 
-**Repository:** [Add the direct Legixo RAG repository URL](https://github.com/ajayvarmaboya)
+**Repository:** [https://github.com/ajayvarmaboya/legixo-rag](https://github.com/ajayvarmaboya)
 
 ### 2. LeetCode GitHub Sync — Developer Workflow Automation
 
@@ -56,7 +56,7 @@ Bengaluru, India 🇮🇳 • Open to Global & Remote Opportunities
 - Building a Chrome extension and Spring Boot backend that capture accepted LeetCode submissions and push formatted solutions to GitHub.
 - Implementing GitHub OAuth 2.0 token exchange, Monaco editor extraction, and duplicate-submission prevention.
 
-**Repository:** [Add the direct LeetCode Sync repository URL](https://github.com/ajayvarmaboya)
+**Repository:** [https://github.com/ajayvarmaboya/leetcode-github-sync](https://github.com/ajayvarmaboya)
 
 ### 3. OpenWork Contribution — Open-Source Agentic AI
 
@@ -65,16 +65,7 @@ Bengaluru, India 🇮🇳 • Open to Global & Remote Opportunities
 - Contributing to a modular desktop application for guided agentic workflows.
 - Working with pull requests, issue triage, and multi-container Docker test environments.
 
-**Repository:** [OpenWork](https://github.com/ajayvarmaboya)
-
-### 4. JobPrep OS & StockFlow Backend
-
-**Tech:** Java 17 • Spring Boot 3 • PostgreSQL • Docker Compose • Maven
-
-- Developing backend services using a layered service–DAO architecture, normalized PostgreSQL schemas, indexing, and Docker Compose persistence for interview tracking and order processing.
-
-**Repository:** [Add the direct JobPrep OS / StockFlow repository URL](https://github.com/ajayvarmaboya)
-
+**Repository:** [https://github.com/different-ai/openwork](https://github.com/ajayvarmaboya)
 ---
 
 ## 📊 GitHub & Problem-Solving Activity
