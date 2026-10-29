@@ -26,7 +26,7 @@ export const portfolioData = {
     // LINKEDIN STATUS:
     // Once your LinkedIn account is restored by support, simply replace `null` with your profile URL:
     // e.g., linkedin: "https://www.linkedin.com/in/ajayvarmaboya",
-    linkedin: null,
+    linkedin: "https://www.linkedin.com/in/ajay-b-a099b2447/",
 
     // Profile photo: Defaults to your live GitHub avatar.
     // If you wish to use a local photo, put photo.jpg inside public/ and change this to "/photo.jpg"
