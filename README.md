@@ -7,7 +7,7 @@ Bengaluru, India 🇮🇳 • Open to Global & Remote Opportunities
 
 [![GitHub](https://img.shields.io/badge/GitHub-ajayvarmaboya-181717?style=flat&logo=github)](https://github.com/ajayvarmaboya)
 [![LeetCode](https://img.shields.io/badge/LeetCode-ajayvarmab-FFA116?style=flat&logo=leetcode)](https://leetcode.com/u/ajayvarmab/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live_Site-0ea5e9?style=flat&logo=safari)](https://ajayvarmaboya.github.io/portfolio)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live_Site-0ea5e9?style=flat&logo=safari)](https://portfolio-beta-gules-83.vercel.app/)
 [![Email](https://img.shields.io/badge/Email-ajayvarmaboya%40gmail.com-EA4335?style=flat&logo=gmail)](mailto:ajayvarmaboya@gmail.com)
 
 ---
