@@ -54,7 +54,7 @@ def create_docx(filename):
     p_contact.alignment = WD_ALIGN_PARAGRAPH.CENTER
     p_contact.paragraph_format.line_spacing = 1.15
     run_contact = p_contact.add_run(
-        "Bengaluru, India (Open to Relocate)  |  +91 9010413027  |  ajayvarmaboya@gmail.com\n"
+        "Bengaluru, India (Open to Relocate)  |  +91 9010413027  |  ajayvarmaboya@gmail.com\n" | Linkdein:https://www.linkedin.com/in/ajay-b-a099b2447/"
         "GitHub: github.com/ajayvarmaboya  |  LeetCode: leetcode.com/u/ajayvarmab  |  Portfolio: ajayvarmaboya.github.io/portfolio"
     )
     run_contact.font.size = Pt(9)
